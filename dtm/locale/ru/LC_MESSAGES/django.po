@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-08 12:00+0300\n"
+"POT-Creation-Date: 2024-10-09 15:13+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,38 +19,50 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
 "(n%100>=11 && n%100<=14)? 2 : 3);\n"
-#: core/models.py:7
-msgid "Title"
-msgstr ""
-
-#: core/models.py:8
-msgid "URL"
-msgstr ""
-
-#: core/models.py:9
-msgid "Named URL"
-msgstr ""
-
-#: core/models.py:10
-msgid "Parent"
-msgstr ""
-
 #: core/models.py:11
-msgid "Menu name"
-msgstr ""
+msgid "Menu Name"
+msgstr "Название меню"
 
-#: core/models.py:22
+#: core/models.py:17 core/models.py:27
+msgid "Menu"
+msgstr "Меню"
+
+#: core/models.py:18
+msgid "Menus"
+msgstr "Меню"
+
+#: core/models.py:26
+msgid "Menu Item Title"
+msgstr "Название пункта меню"
+
+#: core/models.py:28
+msgid "parent"
+msgstr "родитель"
+
+#: core/models.py:29
+msgid "URL"
+msgstr "URL"
+
+#: core/models.py:30
+msgid "Named URL"
+msgstr "Именованный URL"
+
+#: core/models.py:33
 msgid "Menu Item"
-msgstr ""
+msgstr "Пункт меню"
 
-#: core/models.py:23
+#: core/models.py:34
 msgid "Menu Items"
-msgstr ""
+msgstr "Пункты меню"
+
+#: core/templatetags/menu_tags.py:15
+msgid "There is no menu with this name."
+msgstr "Нет меню с таким названием."
 
 #: dtm/settings.py:85
 msgid "English"
-msgstr ""
+msgstr "Английский"
 
 #: dtm/settings.py:86
 msgid "Russian"
-msgstr ""
+msgstr "Русский"

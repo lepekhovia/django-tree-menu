@@ -1,11 +1,12 @@
 from django.contrib import admin
-from django.urls import path, re_path
+from django.urls import path
 
-from core.views import base
+from core.views import base, start
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', base),
-    re_path(r'^(?P<url_path>.*)/$', base)
+    path('', start),
+    path('<str:menu_name>/', base),
+    path('<str:menu_name>/<str:active>/', base)
 ]

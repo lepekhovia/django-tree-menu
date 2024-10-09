@@ -2,15 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu Example</title>
+    <title>{{ menu_name }}</title>
+    <style>
+        .active > a {
+            color: red;
+        }
 
+        li > ul {
+            display: none;
+        }
+
+        li.active > ul {
+            display: block;
+        }
+    </style>
 </head>
 <body>
-    <h1>My Page</h1>
+    <h1>Текущее меню: {{ menu_name }}</h1>
+    <h2>Активный URL: {{ active }}</h2>
 
     {% load menu_tags %}
-    {% draw_menu 'main_menu' %}
-
+    {% draw_menu menu_name active %}
 </body>
 </html>
